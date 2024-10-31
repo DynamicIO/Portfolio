@@ -73,7 +73,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Sam-in-USA E-Commerce Website",
+    title: "SAM-IN-USA E-Commerce Website",
     image: project1,
     description:
       "A fully functional e-commerce website built on shopify with all ecom features like product listing, shopping cart, and user authentication.",
