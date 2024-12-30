@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
 
 export const HERO_CONTENT = `A motivated senior at Kean University with passion for Hackathons, CTF's, and
 enriching oppurtunites in the tech field.`;
@@ -24,7 +25,7 @@ export const EXPERIENCES = [
     technologies: ["365 Suite","Law Enforcment Databases" ,"ALPRs", ]
   },
   {
-    year: "01-2024 - 01-2025",
+    year: "01-2024 - 05-2025",
     role: "NSF Build and Broaden Research Fellowship",
     company: "Kean University",
     description: `Assisted in the development and implementation of machine learning
@@ -73,31 +74,38 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "SAM-IN-USA E-Commerce Website",
+    title: "SAM IN USA E-Commerce Website",
     image: project1,
     description:
-      "A fully functional e-commerce website built on shopify with all ecom features like product listing, shopping cart, and user authentication.",
+      "A fully functional e-commerce website built on shopify backend with all Ecom features like product listing, shopping cart, and user authentication.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+  },
+  {
+    title: "Focal Stands E-Commerce Website",
+    image: project5,
+    description:
+      "Focal Stands is an Ecom website specializing in watch stand holders. The website is built on shopify backend with all features of an Ecom website such as user authenticaion, product browsing and checkout directly from site",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
     title: "RFID Door Lock",
     image: project2,
     description:
-      " A fully functional RFID door lock that could be mounted on any door, created during Hackathon 2022.",
+      "A fully functional RFID door lock that could be mounted on any door, created during Kean Hackathon 2022 earning my team and I 2nd place.",
     technologies: ["HTML", "CSS", "Angular", "Firebase"],
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
+      "A personal portfolio website showcasing projects, skills, and experince.",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
   },
   {
     title: "Web Games",
     image: project4,
     description:
-      "Created varius webgames such as Chess, Tic Tac Toe and matching cards.",
+      "Created varius webgames such as Chess, Tic Tac Toe and matching cards. Gaming website in progress",
     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
   },
 ];
