@@ -7,6 +7,7 @@ import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
 import project9 from "../assets/projects/project-9.jpg";
+import project10 from "../assets/projects/project-10.jpg";
 
 
 export const HERO_CONTENT = `A motivated senior at Kean University with passion for Hackathons, CTF's, and
@@ -79,7 +80,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "metadata-tool-site.vercel.app",
+    title: "passwordgenanalyser.vercel.app",
+    image: project6,
+    description:
+      "PasswordGenAnalyser is a fast, easy tool to create secure passwords and check their strength for better online protection.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+  },
+  {
+    title: "metadatatool.vercel.app",
     image: project9,
     description:
       "Metadata Tool lets you view, edit, and remove image metadata instantly—fast, easy, and privacy-focused.",
@@ -89,21 +97,21 @@ export const PROJECTS = [
     title: "ccdebtcalc.vercel.app",
     image: project8,
     description:
-      "CCDebtCalc helps you quickly estimate how long it will take to pay off your credit card debt and how much interest you’ll pay—simple, clear, and effective.",
+      "CCDebtCalc helps you quickly estimate how long it will take to pay off your debt and how much interest you’ll pay—simple, clear, and effective.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
     title: "bananacpmgame.vercel.app",
     image: project7,
     description:
-      "BananaCPMGame is a fun clicker game where you smash bananas and boost your clicks per minute—fast-paced, addictive, and perfect for quick play.",
+      "BananaCPMGame is a fun clicker game where you measure clicks per minute (CPM) by clicking a banana, fast-paced, addictive, and perfect for quick play.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
-    title: "passwordgenanalyser.vercel.app",
-    image: project6,
+    title: "Audio Sampler - Opera Extension",
+    image: project10,
     description:
-      "PasswordGenAnalyser is a fast, easy tool to create secure passwords and check their strength for better online protection.",
+      "Audio Sampler is a simple Opera extension for quick, in-browser audio recording—built for easy capture, playback, and management as part of a senior capstone project.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
