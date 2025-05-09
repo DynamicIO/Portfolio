@@ -3,6 +3,11 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
+import project6 from "../assets/projects/project-6.jpg";
+import project7 from "../assets/projects/project-7.jpg";
+import project8 from "../assets/projects/project-8.jpg";
+import project9 from "../assets/projects/project-9.jpg";
+
 
 export const HERO_CONTENT = `A motivated senior at Kean University with passion for Hackathons, CTF's, and
 enriching oppurtunites in the tech field.`;
@@ -73,6 +78,34 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "metadata-tool-site.vercel.app",
+    image: project9,
+    description:
+      "Metadata Tool lets you view, edit, and remove image metadata instantly—fast, easy, and privacy-focused.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+  },
+  {
+    title: "ccdebtcalc.vercel.app",
+    image: project8,
+    description:
+      "CCDebtCalc helps you quickly estimate how long it will take to pay off your credit card debt and how much interest you’ll pay—simple, clear, and effective.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+  },
+  {
+    title: "bananacpmgame.vercel.app",
+    image: project7,
+    description:
+      "BananaCPMGame is a fun clicker game where you smash bananas and boost your clicks per minute—fast-paced, addictive, and perfect for quick play.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+  },
+  {
+    title: "passwordgenanalyser.vercel.app",
+    image: project6,
+    description:
+      "PasswordGenAnalyser is a fast, easy tool to create secure passwords and check their strength for better online protection.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+  },
   {
     title: "SAM IN USA E-Commerce Website",
     image: project1,
