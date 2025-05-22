@@ -17,7 +17,7 @@ const Navbar = () => {
           <FaLinkedin />
         </a>
         <a 
-          href="https://github.com/egy7777" 
+          href="https://github.com/DynamicIO" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="transform transition-transform duration-300 hover:scale-125 hover:text-gray-800" // Added transform and scale classes
