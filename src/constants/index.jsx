@@ -35,8 +35,8 @@ export const EXPERIENCES = [
   },
   {
     year: "",
-    role: "NSF Data Science Researcher",
-    company: "Kean University",
+    role: "Data Science Research Assistant",
+    company: "Kean University, National Science Foundation",
     description: `Assisted in developing machine learning models to predict contingent labor trends using logistic 
     regression and statistical analysis. Supported data cleaning, visualization, and interpretation for academic research deliverables.`,
     technologies: ["Python", "STATA", "Data Visualization","MS 365 Suite"]
@@ -51,18 +51,18 @@ export const EXPERIENCES = [
   },
   {
     year: "",
-    role: "CAHSI Cyber Security Researcher",
+    role: "Cyber Security Researcher",
     company: "University of Texas, Kean University",
     description: `Conducted mentored research as part of the CAHSI REU program, and
     engaged in training to strengthen my computing, communication, and
     professional skills. Created a research plan, maintained a journal to
     report on research progress, and created a research poster to
-    disseminate my research results..`,
+    disseminate my research results.`,
     technologies: ["Python", "MS 365 Suite"]
   },
   {
     year: "",
-    role: "FIU Research Assistant",
+    role: "IoT & Cybersecurity Research Assistant",
     company: "Florida International University",
     description: `Contributed to the development of a deep learning-based radio fingerprinting system for IoT device authentication. Gained experience with 
     software-defined radios (SDR), RF signal processing, and device-level security modeling.`,
