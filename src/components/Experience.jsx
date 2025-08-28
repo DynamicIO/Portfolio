@@ -24,6 +24,13 @@ const Experience = () => {
               <h6 className="mb-2 font-semibold">
                 {experience.role} -{" "}
                 <span className="text-sm text-purple-100">{experience.company}</span>
+                {experience.logo && (
+                  <img 
+                    src={experience.logo} 
+                    alt={`${experience.company} logo`}
+                    className="w-6 h-6 ml-2 object-contain inline-block align-middle"
+                  />
+                )}
               </h6>
               <p className="mb-4 text-neutral-400">{experience.description}</p>
               <div>
