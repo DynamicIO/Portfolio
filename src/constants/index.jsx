@@ -23,7 +23,7 @@ enriching oppurtunites in the tech field.`;
 export const ABOUT_TEXT = `As a student of Information Technology and Cyber Security, 
 I have a passion for technology and all its aspects, especially its application in the realm of cybersecurity. 
 I am extremely interested and passionate about pursuing opportunities that will enable me to further expand and 
-enhance my knowledge, skill set, and gain more experience in the field, to prepare myself for my upcoming M.S 
+enhance my knowledge, skill set, and gain more experience in the field, to prepare myself for my upcoming Ph.D  
 program as well as the professional work field. In addition to my academic background, I have also gained practical
 experience in the field through various internships, hackathons and comptetions. Through these experiences, I have 
 developed a strong foundation in Information Technology, networking (TCP/IP) and cybersecurity.`;
@@ -31,8 +31,8 @@ developed a strong foundation in Information Technology, networking (TCP/IP) and
 export const EXPERIENCES = [
   {
     year: "",
-    role: "Quantum Research Intern",
-    company: "DOD & NSF",
+    role: "Quantum Research",
+    company: "Department of Defense & National Science Foundation",
     logo: dodLogo,
     description: `Designed and implemented quantum network simulations in NetSquid to evaluate the impact of imperfect 
     Bell State Measurements (BSMs) and classical communication delays on end-to-end entanglement fidelity and throughput.`,
@@ -50,7 +50,7 @@ export const EXPERIENCES = [
   },
   {
     year: "",
-    role: "Data Science Research Assistant",
+    role: "Data Science Socio-Economic Research",
     company: "Kean University, National Science Foundation",
     logo: nsfLogo,
     description: `Assisted in developing machine learning models to predict contingent labor trends using logistic 
