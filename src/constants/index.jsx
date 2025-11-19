@@ -11,11 +11,6 @@ import project10 from "../assets/projects/project-10.jpg";
 import project11 from "../assets/projects/project-11.jpg";
 import project12 from "../assets/projects/project-12.jpg";
 import project13 from "../assets/projects/project-13.jpg";
-import dodLogo from "../../public/Seal_of_the_United_States_Department_of_Defense.svg.png";
-import njspLogo from "../../public/Logo_of_the_New_Jersey_State_Police.svg.png";
-import nsfLogo from "../../public/NSF.svg.png";
-import njTransitLogo from "../../public/nj-transit-logo.jpg";
-import ciscoLogo from "../../public/cisco-systems.png";
 
 export const HERO_CONTENT = `A motivated Ph.D student with a passion for Hackathons, CTF's, and
 enriching oppurtunites in the tech field.`;
@@ -33,7 +28,7 @@ export const EXPERIENCES = [
     year: "",
     role: "Quantum Research",
     company: "Department of Defense & National Science Foundation",
-    logo: dodLogo,
+    logo: "/Seal_of_the_United_States_Department_of_Defense.svg.png",
     description: `Designed and implemented quantum network simulations in NetSquid to evaluate the impact of imperfect 
     Bell State Measurements (BSMs) and classical communication delays on end-to-end entanglement fidelity and throughput.`,
     technologies: [,"NetSquid (Quantum Network Simulator)", "Python", "Quantum Networking Protocols", "Simulation Data Visualization (Matplotlib / Pandas)"]
@@ -42,7 +37,7 @@ export const EXPERIENCES = [
     year: "",
     role: "Real Time Crime Center Analyst",
     company: "New Jersey State Police",
-    logo: njspLogo,
+    logo: "/Logo_of_the_New_Jersey_State_Police.svg.png",
     description: `Monitored data streams and conducted real time analysis to support law enforcement operations. 
     Provided technological support, prepared analytical reports, and worked with law enforcement databases, open-source 
     intelligence (OSINT), and automated license plate readers (ALPRs).`,
@@ -52,7 +47,7 @@ export const EXPERIENCES = [
     year: "",
     role: "Data Science Socio-Economic Research",
     company: "Kean University, National Science Foundation",
-    logo: nsfLogo,
+    logo: "/NSF.svg.png",
     description: `Assisted in developing machine learning models to predict contingent labor trends using logistic 
     regression and statistical analysis. Supported data cleaning, visualization, and interpretation for academic research deliverables.`,
     technologies: ["Python", "STATA", "Data Visualization","MS 365 Suite"]
@@ -61,7 +56,7 @@ export const EXPERIENCES = [
     year: "",
     role: "End User Field Services Technician",
     company: "NJ Transit",
-    logo: njTransitLogo,
+    logo: "/nj-transit-logo.jpg",
     description: `Installed and maintained hardware/software for field offices. Provided user support, enforced security compliance standards, 
     and maintained system documentation. Used Active Directory and PowerShell for diagnostics and user account management.`,
     technologies: ["Active Directory", "TCP/IP", "PowerShell", "MS 365 Suite"]
@@ -89,7 +84,7 @@ export const EXPERIENCES = [
     year: "",
     role: "Cisco Network Intern",
     company: "Cisco inc.",
-    logo: ciscoLogo,
+    logo: "/cisco-systems.png",
     description: `Collaborated with Cisco and Round Rock engineers to deploy Wi-Fi 6 access points for the Global Citizens Festival in NYC. 
     Gained practical experience in large-scale event network setup and wireless infrastructure optimization.`,
     technologies: ["TCP/IP", "Network Deployment", "Wireless Infrastructure", "Wi-Fi 6"]

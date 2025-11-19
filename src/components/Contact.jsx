@@ -1,5 +1,5 @@
 import { CONTACT } from "../constants";
-import resumeFile from "../assets/Ben Abraham Resume--.pdf"; // Adjust the path if needed
+import resumeFile from "../assets/B-A Resume.pdf"; // Adjust the path if needed
 
 const Contact = () => {
   return (
