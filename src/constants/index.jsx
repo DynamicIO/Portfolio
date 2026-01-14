@@ -11,6 +11,8 @@ import project10 from "../assets/projects/project-10.jpg";
 import project11 from "../assets/projects/project-11.jpg";
 import project12 from "../assets/projects/project-12.jpg";
 import project13 from "../assets/projects/project-13.jpg";
+import project14 from "../assets/projects/project-14.jpg";
+import project15 from "../assets/projects/project-15.jpg";
 
 export const HERO_CONTENT = `A motivated Ph.D student with a passion for Hackathons, CTF's, and
 enriching oppurtunites in the tech field.`;
@@ -26,10 +28,20 @@ developed a strong foundation in Information Technology, networking (TCP/IP) and
 export const EXPERIENCES = [
   {
     year: "",
+    role: "Graduate Research Assistant",
+    company: "Kean University",
+    logo: "/Kean_univ_nj_seal.png",
+    description: `Designed and executed data cleaning and analysis pipelines for Survey of Income and Program Participation (SIPP)
+datasets, including raw data acquisition and pre-processing across 1996–2008 panels with targeted analysis of the
+2001 panel.`,
+    technologies: ["Data Cleaning", "Data Analysis", "SIPP Datasets", "Python", "Statistical Analysis"]
+  },
+  {
+    year: "",
     role: "Quantum Research",
     company: "Department of Defense & National Science Foundation",
     logo: "/Seal_of_the_United_States_Department_of_Defense.svg.png",
-    description: `Designed and implemented quantum network simulations in NetSquid to evaluate the impact of imperfect 
+    description: `Designed and implemented quantum network simulations in NetSquid to evaluate the impact of imperfect
     Bell State Measurements (BSMs) and classical communication delays on end-to-end entanglement fidelity and throughput.`,
     technologies: [,"NetSquid (Quantum Network Simulator)", "Python", "Quantum Networking Protocols", "Simulation Data Visualization (Matplotlib / Pandas)"]
   },
@@ -93,6 +105,22 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "InviteUs",
+    image: project15,
+    description:
+      "InviteUs - A modern invitation platform for creating and managing digital invitations with ease.",
+    technologies: ["React", "Next.js", "Vercel", "Web Development"],
+    link: "https://inviteus.vercel.app/"
+  },
+  {
+    title: "Dynamic.IO",
+    image: project14,
+    description:
+      "Dynamic.IO - Premium Web Development Agency specializing in modern web solutions and digital experiences.",
+    technologies: ["Web Development", "UI/UX Design", "Digital Solutions"],
+    link: "https://www.dynamicio.net/"
+  },
   {
     title: "PasswordGenanAlyser",
     image: project6,
