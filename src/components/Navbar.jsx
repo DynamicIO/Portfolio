@@ -24,7 +24,9 @@ const Navbar = () => {
   useEffect(() => {
     let lastY = window.scrollY;
     const onScroll = () => {
-      const y = window.scrollY;
+      // Clamp to the real page range so iOS rubber-band bounces don't count as scrolling
+      const maxY = document.documentElement.scrollHeight - window.innerHeight;
+      const y = Math.min(Math.max(window.scrollY, 0), maxY);
       if (y < 64) setHidden(false);
       else if (Math.abs(y - lastY) > 8) setHidden(y > lastY);
       if (Math.abs(y - lastY) > 8) lastY = y;
@@ -58,8 +60,8 @@ const Navbar = () => {
   return (
     <header
       onFocus={() => setHidden(false)}
-      className={`sticky top-0 z-50 border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md transition-transform duration-300 ${
-        hidden && !open ? "-translate-y-full" : "translate-y-0"
+      className={`sticky top-0 z-50 border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md transition-[transform,visibility] duration-300 will-change-transform ${
+        hidden && !open ? "invisible -translate-y-full" : "visible translate-y-0"
       }`}
     >
       <nav className="container mx-auto flex h-16 items-center justify-between px-8">

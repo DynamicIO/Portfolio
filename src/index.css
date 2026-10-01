@@ -8,6 +8,13 @@
   font-family: "Inter", sans-serif;
 }
 
+/* Dark page background so Safari's status bar, toolbar area and overscroll aren't white */
+html,
+body {
+  background-color: #0a0a0a; /* neutral-950 */
+  color-scheme: dark;
+}
+
 /* Smooth scroll for navbar links, offset by the sticky navbar height */
 html {
   scroll-behavior: smooth;
