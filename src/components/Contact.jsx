@@ -7,7 +7,6 @@ const Contact = () => {
       <h1 className="my-10 text-center text-4xl">Get in touch!</h1>
       <div className="text-center tracking-tighter">
         <p className="my-4">{CONTACT.address}</p>
-        <p className="my-4">{CONTACT.phoneNo}</p>
         <a 
           href={`mailto:${CONTACT.email}`} 
           className="border-b hover:text-blue-500 hover:border-blue-500 transition-colors duration-300"

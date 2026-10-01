@@ -250,7 +250,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Eatontown, NJ ",
+  address: "New Jersey, USA",
   email: "ben.harry.abraham@gmail.com",
 };
 
