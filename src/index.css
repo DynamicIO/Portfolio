@@ -7,3 +7,15 @@
 :root {
   font-family: "Inter", sans-serif;
 }
+
+/* Smooth scroll for navbar links, offset by the sticky navbar height */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

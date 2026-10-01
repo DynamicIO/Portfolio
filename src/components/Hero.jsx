@@ -15,7 +15,7 @@ const container = (delay) => ({
 // Hero component
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div id="top" className="border-b border-neutral-900 pb-4 pt-12 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -33,7 +33,7 @@ const Hero = () => {
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              I.T & Cyber Security
+              Computer Science Graduate Student
             </motion.span>
             <motion.p
               variants={container(1)}

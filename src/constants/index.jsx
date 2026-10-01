@@ -14,94 +14,119 @@ import project13 from "../assets/projects/project-13.jpg";
 import project14 from "../assets/projects/project-14.jpg";
 import project15 from "../assets/projects/project-15.jpg";
 
-export const HERO_CONTENT = `A motivated Ph.D student with a passion for Hackathons, CTF's, and
-enriching oppurtunites in the tech field.`;
+export const HERO_CONTENT = `Passionate about research, cybersecurity, hackathons, CTFs, and building
+meaningful technology. Always exploring new challenges, learning, and looking for opportunities
+to turn ideas into impactful solutions.`;
 
-export const ABOUT_TEXT = `As a student of Information Technology and Cyber Security, 
-I have a passion for technology and all its aspects, especially its application in the realm of cybersecurity. 
-I am extremely interested and passionate about pursuing opportunities that will enable me to further expand and 
-enhance my knowledge, skill set, and gain more experience in the field, to prepare myself for my upcoming Ph.D  
-program as well as the professional work field. In addition to my academic background, I have also gained practical
-experience in the field through various internships, hackathons and comptetions. Through these experiences, I have 
-developed a strong foundation in Information Technology, networking (TCP/IP) and cybersecurity.`;
+export const ABOUT_TEXT = [
+  `I'm a Computer Science graduate student at Kean University with a background in networking and
+  cybersecurity. My work spans several areas: I've simulated quantum networks for the Department of
+  Defense and NSF, built deep learning models for IoT device authentication, analyzed data for
+  socio-economic research, and supported live operations at the New Jersey State Police Real Time
+  Crime Center.`,
+  `Outside the lab, I compete in hackathons and CTFs and build web tools, from security utilities to
+  full products. I'm drawn to work that combines research with real-world impact, and I'm always
+  looking for the next hard problem to solve.`,
+  `When I'm not at a keyboard, I'm usually building something with a Raspberry Pi or Arduino, or
+  indulging my love of aviation.`,
+];
 
 export const EXPERIENCES = [
   {
-    year: "",
+    year: "2026",
     role: "Graduate Research Assistant",
-    company: "Kean University",
+    company: "Kean University, Department of Psychology (TEEN Lab)",
     logo: "/Kean_univ_nj_seal.png",
-    description: `Designed and executed data cleaning and analysis pipelines for Survey of Income and Program Participation (SIPP)
-datasets, including raw data acquisition and pre-processing across 1996–2008 panels with targeted analysis of the
-2001 panel.`,
-    technologies: ["Data Cleaning", "Data Analysis", "SIPP Datasets", "Python", "Statistical Analysis"]
+    description: `Serve as project manager for a developmental neuroscience study on how VR social stressors affect
+    adolescent physiological and behavioral responses, coordinating multimodal data collection (EEG, actigraphy,
+    salivary hormones, behavioral data). Support data cleaning, integration, and analysis in Python toward publication.`,
+    technologies: ["Project Management", "Python", "EEG", "Data Analysis", "IRB"]
   },
   {
-    year: "",
-    role: "Quantum Research",
-    company: "Department of Defense & National Science Foundation",
+    year: "2025",
+    role: "Graduate Research Assistant",
+    company: "Kean University, College of Business and Public Management",
+    logo: "/Kean_univ_nj_seal.png",
+    description: `Designed and executed data cleaning and analysis pipelines in Python for Survey of Income and Program
+    Participation (SIPP) datasets, spanning raw data acquisition and preprocessing across the 1996 to 2008 panels.`,
+    technologies: ["Python", "Data Pipelines", "Data Cleaning", "SIPP"]
+  },
+  {
+    year: "2025",
+    role: "Quantum Researcher",
+    company: "Department of Defense, National Science Foundation, Florida International University",
     logo: "/Seal_of_the_United_States_Department_of_Defense.svg.png",
-    description: `Designed and implemented quantum network simulations in NetSquid to evaluate the impact of imperfect
-    Bell State Measurements (BSMs) and classical communication delays on end-to-end entanglement fidelity and throughput.`,
-    technologies: [,"NetSquid (Quantum Network Simulator)", "Python", "Quantum Networking Protocols", "Simulation Data Visualization (Matplotlib / Pandas)"]
+    description: `Designed and implemented quantum network simulations scaling to 1,200 nodes to evaluate how imperfect
+    Bell State Measurements (BSMs) and classical communication delays affect end-to-end entanglement fidelity and throughput.`,
+    technologies: ["NetSquid", "Python", "Quantum Networking", "Pandas", "Matplotlib"]
   },
   {
-    year: "",
-    role: "Real Time Crime Center Analyst",
+    year: "2025",
+    role: "Co-Entrepreneurial Lead",
+    company: "National Science Foundation I-Corps Hub (Northeast Region), Team SAGEM",
+    logo: "/NSF.svg.png",
+    description: `Completed the NSF I-Corps program as Co-Entrepreneurial Lead, driving customer discovery, market validation,
+    and commercialization research for a cognitive health product. Conducted and analyzed 30+ customer interviews and
+    delivered cohort presentations to inform the product and business plan.`,
+    technologies: ["Customer Discovery", "Market Validation", "Commercialization"]
+  },
+  {
+    year: "2024",
+    role: "Real Time Crime Center Data Analyst",
     company: "New Jersey State Police",
     logo: "/Logo_of_the_New_Jersey_State_Police.svg.png",
-    description: `Monitored data streams and conducted real time analysis to support law enforcement operations. 
-    Provided technological support, prepared analytical reports, and worked with law enforcement databases, open-source 
-    intelligence (OSINT), and automated license plate readers (ALPRs).`,
-    technologies: [,"OSINT", "ALPRs", "Law Enforcment Data Monotiring", "MS 365 Suite"]
+    description: `Monitored and analyzed 9+ real-time criminal intelligence feeds, license plate recognition systems, and
+    surveillance databases to support active investigations. Produced intelligence reports, data visualizations, and crime
+    pattern analyses, and facilitated information sharing across local, state, and federal partners.`,
+    technologies: ["Intelligence Analysis", "OSINT", "ALPR", "Data Visualization"]
   },
   {
-    year: "",
-    role: "Data Science Socio-Economic Research",
+    year: "2024",
+    role: "Socio-Economic Research Fellowship",
     company: "Kean University, National Science Foundation",
     logo: "/NSF.svg.png",
-    description: `Assisted in developing machine learning models to predict contingent labor trends using logistic 
-    regression and statistical analysis. Supported data cleaning, visualization, and interpretation for academic research deliverables.`,
-    technologies: ["Python", "STATA", "Data Visualization","MS 365 Suite"]
+    description: `Developed and implemented machine learning models in Python (logistic regression and additional statistical
+    techniques) to predict contingent worker classification as part of an NSF-funded research team.`,
+    technologies: ["Python", "STATA", "Logistic Regression", "Machine Learning"]
   },
   {
-    year: "",
+    year: "2024",
+    role: "CAHSI Cyber Security Researcher",
+    company: "University of Texas, Kean University, National Science Foundation",
+    logo: "/Kean_univ_nj_seal.png",
+    description: `Conducted mentored cybersecurity research through the CAHSI REU program; authored a research plan,
+    tracked progress, and presented findings via a formal research poster.`,
+    technologies: ["Cybersecurity Research", "Python", "Research Poster"]
+  },
+  {
+    year: "2024",
     role: "End User Field Services Technician",
     company: "NJ Transit",
     logo: "/nj-transit-logo.jpg",
-    description: `Installed and maintained hardware/software for field offices. Provided user support, enforced security compliance standards, 
-    and maintained system documentation. Used Active Directory and PowerShell for diagnostics and user account management.`,
-    technologies: ["Active Directory", "TCP/IP", "PowerShell", "MS 365 Suite"]
+    description: `Provided on-site technical support across NJ Transit, troubleshooting hardware, software, and network
+    connectivity issues to minimize downtime. Configured and deployed workstations, and used Active Directory and
+    PowerShell for diagnostics and user account management.`,
+    technologies: ["Active Directory", "PowerShell", "TCP/IP", "Technical Support"]
   },
   {
-    year: "",
-    role: "Cyber Security Researcher",
-    company: "University of Texas, Kean University",
-    description: `Conducted mentored research as part of the CAHSI REU program, and
-    engaged in training to strengthen my computing, communication, and
-    professional skills. Created a research plan, maintained a journal to
-    report on research progress, and created a research poster to
-    disseminate my research results.`,
-    technologies: ["Python", "MS 365 Suite"]
+    year: "2023",
+    role: "IoT Research Assistant",
+    company: "Department of Defense, National Science Foundation, Florida International University",
+    logo: "/Seal_of_the_United_States_Department_of_Defense.svg.png",
+    description: `Contributed to the development of a deep learning-based radio fingerprinting system for IoT device
+    authentication, working with software-defined radios (SDR) and RF signal processing.`,
+    technologies: ["PyTorch", "Deep Learning", "SDR", "RF Fingerprinting", "IoT Security"]
   },
   {
-    year: "",
-    role: "IoT & Cybersecurity Research Assistant",
-    company: "Florida International University",
-    description: `Contributed to the development of a deep learning-based radio fingerprinting system for IoT device authentication. Gained experience with 
-    software-defined radios (SDR), RF signal processing, and device-level security modeling.`,
-    technologies: ["Python", "IoT","SDR", "Recivers and Transmittors"]
-  },
-  {
-    year: "",
+    year: "2022",
     role: "Cisco Network Intern",
-    company: "Cisco inc.",
+    company: "Cisco Inc.",
     logo: "/cisco-systems.png",
-    description: `Collaborated with Cisco and Round Rock engineers to deploy Wi-Fi 6 access points for the Global Citizens Festival in NYC. 
-    Gained practical experience in large-scale event network setup and wireless infrastructure optimization.`,
-    technologies: ["TCP/IP", "Network Deployment", "Wireless Infrastructure", "Wi-Fi 6"]
+    description: `Collaborated with Cisco and Round Rock engineers to deploy 16 Meraki MR76 and MR86 Wi-Fi 6 access points
+    across VIP and outdoor zones for the Global Citizen Festival in NYC, gaining hands-on experience in large-scale event
+    networking and wireless infrastructure optimization.`,
+    technologies: ["Cisco Meraki", "Wi-Fi 6", "Network Deployment"]
   },
- 
 ];
 
 export const PROJECTS = [
@@ -205,8 +230,8 @@ export const PROJECTS = [
     title: "RFID Door Lock",
     image: project2,
     description:
-      "A fully functional RFID door lock that could be mounted on any door, created during Kean Hackathon 2022 earning my team and I 2nd place.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "A fully functional RFID door lock built on an Arduino Uno with custom 3D-printed parts, created during Kean Hackathon 2022 and earning my team 2nd place.",
+    technologies: ["Arduino Uno", "C++", "RFID", "3D Printing"],
   },
   {
     title: "Portfolio Website",
@@ -226,5 +251,38 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Eatontown, NJ ",
-  email: "abrahabe@kean.edu",
+  email: "ben.harry.abraham@gmail.com",
 };
+
+export const ACHIEVEMENTS = [
+  {
+    title: "Competitions",
+    items: [
+      { name: "TryHackMe", detail: "Ranked in the top 2% globally (2021)" },
+      { name: "NJIT National CTF", detail: "Top 20% nationally (2023 & 2025)" },
+      { name: "GMIS National Conference CTF", detail: "Top 25% nationally (2024)" },
+      { name: "Kean University Hackathon", detail: "2nd place, RFID door lock on Arduino Uno with 3D-printed parts (2022)" },
+    ],
+  },
+  {
+    title: "Training",
+    items: [
+      { name: "TryHackMe Cyber Defense", detail: "Threat & vulnerability management, incident response" },
+      { name: "TryHackMe Junior Penetration Tester", detail: "Learning path" },
+    ],
+  },
+  {
+    title: "Leadership",
+    items: [
+      { name: "Police Explorers", detail: "Promoted to Sergeant, then Chief; led drills, mentored junior Explorers, and contributed hundreds of hours of community service" },
+      { name: "SkillsUSA", detail: "Judge for the Tech Apps competition (Thomas Edison High School, NYC)" },
+    ],
+  },
+  {
+    title: "Affiliations",
+    items: [
+      { name: "IEEE", detail: "Member" },
+      { name: "ACM", detail: "Member, Kean University chapter" },
+    ],
+  },
+];

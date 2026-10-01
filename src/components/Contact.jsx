@@ -1,9 +1,9 @@
 import { CONTACT } from "../constants";
-import resumeFile from "../assets/BenAbraResume.pdf"; // Adjust the path if needed
+import resumeFile from "../assets/BenAbrahamResume.pdf"; // Adjust the path if needed
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-20">
+    <div id="contact" className="border-b border-neutral-900 pb-20">
       <h1 className="my-10 text-center text-4xl">Get in touch!</h1>
       <div className="text-center tracking-tighter">
         <p className="my-4">{CONTACT.address}</p>
