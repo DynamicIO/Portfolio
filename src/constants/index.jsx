@@ -13,8 +13,10 @@ import project12 from "../assets/projects/project-12.jpg";
 import project13 from "../assets/projects/project-13.jpg";
 import project14 from "../assets/projects/project-14.jpg";
 import project15 from "../assets/projects/project-15.jpg";
+import dynamicTasksIcon from "../assets/projects/dynamic-tasks.png";
+import passGenProIcon from "../assets/projects/passgen-pro.png";
 
-export const HERO_CONTENT = `Passionate about research, cybersecurity, hackathons, CTFs, and building
+export const HERO_CONTENT = `Passionate about quantum networking research, cybersecurity, hackathons, CTFs, and building
 meaningful technology. Always exploring new challenges, learning, and looking for opportunities
 to turn ideas into impactful solutions.`;
 
@@ -33,6 +35,7 @@ export const ABOUT_TEXT = [
 
 export const EXPERIENCES = [
   {
+    category: "research",
     year: "2026",
     role: "Graduate Research Assistant",
     company: "Kean University, Department of Psychology (TEEN Lab)",
@@ -43,6 +46,7 @@ export const EXPERIENCES = [
     technologies: ["Project Management", "Python", "EEG", "Data Analysis", "IRB"]
   },
   {
+    category: "research",
     year: "2025",
     role: "Graduate Research Assistant",
     company: "Kean University, College of Business and Public Management",
@@ -52,6 +56,7 @@ export const EXPERIENCES = [
     technologies: ["Python", "Data Pipelines", "Data Cleaning", "SIPP"]
   },
   {
+    category: "research",
     year: "2025",
     role: "Quantum Researcher",
     company: "Department of Defense, National Science Foundation, Florida International University",
@@ -61,6 +66,37 @@ export const EXPERIENCES = [
     technologies: ["NetSquid", "Python", "Quantum Networking", "Pandas", "Matplotlib"]
   },
   {
+    category: "research",
+    year: "2024",
+    role: "Socio-Economic Research Fellowship",
+    company: "Kean University, National Science Foundation",
+    logo: "/NSF.svg.png",
+    description: `Developed and implemented machine learning models in Python (logistic regression and additional statistical
+    techniques) to predict contingent worker classification as part of an NSF-funded research team.`,
+    technologies: ["Python", "STATA", "Logistic Regression", "Machine Learning"]
+  },
+  {
+    category: "research",
+    year: "2024",
+    role: "CAHSI Cyber Security Researcher",
+    company: "University of Texas, Kean University, National Science Foundation",
+    logo: "/Kean_univ_nj_seal.png",
+    description: `Conducted mentored cybersecurity research through the CAHSI REU program; authored a research plan,
+    tracked progress, and presented findings via a formal research poster.`,
+    technologies: ["Cybersecurity Research", "Python", "Research Poster"]
+  },
+  {
+    category: "research",
+    year: "2023",
+    role: "IoT Research Assistant",
+    company: "Department of Defense, National Science Foundation, Florida International University",
+    logo: "/Seal_of_the_United_States_Department_of_Defense.svg.png",
+    description: `Contributed to the development of a deep learning-based radio fingerprinting system for IoT device
+    authentication, working with software-defined radios (SDR) and RF signal processing.`,
+    technologies: ["PyTorch", "Deep Learning", "SDR", "RF Fingerprinting", "IoT Security"]
+  },
+  {
+    category: "professional",
     year: "2025",
     role: "Co-Entrepreneurial Lead",
     company: "National Science Foundation I-Corps Hub (Northeast Region), Team SAGEM",
@@ -71,6 +107,7 @@ export const EXPERIENCES = [
     technologies: ["Customer Discovery", "Market Validation", "Commercialization"]
   },
   {
+    category: "professional",
     year: "2024",
     role: "Real Time Crime Center Data Analyst",
     company: "New Jersey State Police",
@@ -81,24 +118,7 @@ export const EXPERIENCES = [
     technologies: ["Intelligence Analysis", "OSINT", "ALPR", "Data Visualization"]
   },
   {
-    year: "2024",
-    role: "Socio-Economic Research Fellowship",
-    company: "Kean University, National Science Foundation",
-    logo: "/NSF.svg.png",
-    description: `Developed and implemented machine learning models in Python (logistic regression and additional statistical
-    techniques) to predict contingent worker classification as part of an NSF-funded research team.`,
-    technologies: ["Python", "STATA", "Logistic Regression", "Machine Learning"]
-  },
-  {
-    year: "2024",
-    role: "CAHSI Cyber Security Researcher",
-    company: "University of Texas, Kean University, National Science Foundation",
-    logo: "/Kean_univ_nj_seal.png",
-    description: `Conducted mentored cybersecurity research through the CAHSI REU program; authored a research plan,
-    tracked progress, and presented findings via a formal research poster.`,
-    technologies: ["Cybersecurity Research", "Python", "Research Poster"]
-  },
-  {
+    category: "professional",
     year: "2024",
     role: "End User Field Services Technician",
     company: "NJ Transit",
@@ -109,15 +129,7 @@ export const EXPERIENCES = [
     technologies: ["Active Directory", "PowerShell", "TCP/IP", "Technical Support"]
   },
   {
-    year: "2023",
-    role: "IoT Research Assistant",
-    company: "Department of Defense, National Science Foundation, Florida International University",
-    logo: "/Seal_of_the_United_States_Department_of_Defense.svg.png",
-    description: `Contributed to the development of a deep learning-based radio fingerprinting system for IoT device
-    authentication, working with software-defined radios (SDR) and RF signal processing.`,
-    technologies: ["PyTorch", "Deep Learning", "SDR", "RF Fingerprinting", "IoT Security"]
-  },
-  {
+    category: "professional",
     year: "2022",
     role: "Cisco Network Intern",
     company: "Cisco Inc.",
@@ -129,14 +141,37 @@ export const EXPERIENCES = [
   },
 ];
 
+// The first FEATURED_PROJECT_COUNT projects show by default; the rest sit behind "More projects"
+export const FEATURED_PROJECT_COUNT = 4;
+
 export const PROJECTS = [
   {
-    title: "InviteUs",
+    title: "Invites",
     image: project15,
     description:
-      "InviteUs - A modern invitation platform for creating and managing digital invitations with ease.",
+      "Invites - A modern invitation platform for creating and managing digital invitations with ease.",
     technologies: ["React", "Next.js", "Vercel", "Web Development"],
-    link: "https://inviteus.vercel.app/"
+    link: "https://invites.live/"
+  },
+  {
+    title: "Dynamic Tasks",
+    badge: "Mobile App",
+    image: dynamicTasksIcon,
+    isAppIcon: true,
+    description:
+      "Dynamic Tasks - A productivity app for iPhone to organize your day, with priority and category tags, deadline reminders, drag-and-drop reordering, task history, and a focused dark UI.",
+    technologies: ["iOS", "Mobile Development"],
+    link: "https://apps.apple.com/us/app/dynamic-tasks/id6761499588"
+  },
+  {
+    title: "PassGen Pro",
+    badge: "Mobile App",
+    image: passGenProIcon,
+    isAppIcon: true,
+    description:
+      "PassGen Pro - A privacy-focused password tool for iPhone and iPad that generates strong passwords, tests their strength, and stores them in an encrypted, local-only vault. No ads, tracking, or accounts.",
+    technologies: ["iOS", "Mobile Development", "Security"],
+    link: "https://apps.apple.com/us/app/passgen-pro/id6760671887"
   },
   {
     title: "Dynamic.IO",
@@ -147,7 +182,30 @@ export const PROJECTS = [
     link: "https://www.dynamicio.net/"
   },
   {
-    title: "PasswordGenanAlyser",
+    title: "RFID Door Lock",
+    image: project2,
+    description:
+      "A fully functional RFID door lock built on an Arduino Uno with custom 3D-printed parts, created during Kean Hackathon 2022 and earning my team 2nd place.",
+    technologies: ["Arduino Uno", "C++", "RFID", "3D Printing"],
+  },
+  {
+    title: "SAM IN USA E-Commerce Website",
+    image: project1,
+    description:
+      "A fully functional e-commerce website built on Shopify backend with all Ecom features like product listing, shopping cart, and user authentication.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    link: "https://saminusa.com/"
+  },
+  {
+    title: "Focal Stands E-Commerce Website",
+    image: project5,
+    description:
+      "Focal Stands is an Ecom website specializing in watch stand holders. The website is built on Shopify backend with all features of an Ecom website such as user authentication, product browsing and checkout directly from site.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    link: "https://focalstands.com/"
+  },
+  {
+    title: "PasswordGenAnalyser",
     image: project6,
     description:
       "PasswordGenAnalyser is a fast, easy tool to create secure passwords and check their strength for better online protection.",
@@ -168,7 +226,7 @@ export const PROJECTS = [
     description:
       "Metadata Tool lets you view, edit, and remove image metadata instantly—fast, easy, and privacy-focused.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    link: "https://metadatatool.vercel.app/"
+    link: "https://metadataanalyzerv2.vercel.app/"
   },
   {
     title: "ZeroGPT",
@@ -187,7 +245,7 @@ export const PROJECTS = [
     link: "https://particlesimulator.vercel.app/"
   },
   {
-    title: "BananaCPMgame",
+    title: "BananaCPMGame",
     image: project7,
     description:
       "BananaCPMGame is a fun clicker game where you measure clicks per minute (CPM) by clicking a banana, fast-paced, addictive, and perfect for quick play.",
@@ -206,45 +264,22 @@ export const PROJECTS = [
     title: "Audio Sampler - Opera Extension",
     image: project10,
     description:
-      "Audio Sampler is a simple Opera extension for quick, in-browser audio recording—built for easy capture, playback, and management as part of a senior capstone project.",
+      "Audio Sampler is a simple Opera extension for quick, in-browser audio recording—built for easy capture, playback, and management as part of a team senior capstone project.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
     link: "https://github.com/d-yager/audio-extension/"
-  },
-  {
-    title: "SAM IN USA E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website built on shopify backend with all Ecom features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    link: "https://saminusa.com/"
-  },
-  {
-    title: "Focal Stands E-Commerce Website",
-    image: project5,
-    description:
-      "Focal Stands is an Ecom website specializing in watch stand holders. The website is built on shopify backend with all features of an Ecom website such as user authenticaion, product browsing and checkout directly from site",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    link: "https://focalstands.com/"
-  },
-  {
-    title: "RFID Door Lock",
-    image: project2,
-    description:
-      "A fully functional RFID door lock built on an Arduino Uno with custom 3D-printed parts, created during Kean Hackathon 2022 and earning my team 2nd place.",
-    technologies: ["Arduino Uno", "C++", "RFID", "3D Printing"],
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and experince.",
+      "A personal portfolio website showcasing projects, skills, and experience.",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
   },
   {
     title: "Web Games",
     image: project4,
     description:
-      "Created varius webgames such as Chess, Tic Tac Toe and matching cards. Gaming website in progress",
+      "Created various web games such as Chess, Tic Tac Toe and matching cards. Gaming website in progress",
     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
   },
 ];

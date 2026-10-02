@@ -31,9 +31,13 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-center text-2xl tracking-tight text-transparent lg:text-left lg:text-3xl"
             >
               Computer Science Graduate Student
+              <span className="hidden lg:inline"> · </span>
+              <span className="mt-1 block text-lg lg:mt-0 lg:inline lg:text-3xl">
+                Quantum Networking Research
+              </span>
             </motion.span>
             <motion.p
               variants={container(1)}

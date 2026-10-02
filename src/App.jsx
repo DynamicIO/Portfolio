@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About"; // Make sure to import About
@@ -7,7 +6,6 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
-import Chatbot from './components/Chatbot';
 
 const App = () => {
   return (
